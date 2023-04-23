@@ -5,7 +5,6 @@ s = input('Give a Roman Number to check if it is correct!: ').upper()
 roman = Roman()
 result = roman.correctRoman(s)
 if result is not True:
-    print(result)
     print('Unfortunately, the given number is incorrect.')
 else:
     ans = input('Your Roman number is written correct! Do you want to convert your number - Y/N?: ').upper()
