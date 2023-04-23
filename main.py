@@ -10,10 +10,10 @@ else:
     ans = input('Your Roman number is written correct! Do you want to convert your number - Y/N?: ').upper()
     if ans=='Y':
         choice = input('Choose how you want to convert the number: \n'
-                       'Binary - enter B \n'
+                       #'Binary - enter B \n'
                        'Integer - enter I \n').upper()
-        if choice == 'B':
-            print('function not implemented')
+        #if choice == 'B':
+        #   print('roman_bin')
         if choice == 'I':
             roman_int = roman.romanToInt(s)
             print(roman_int)

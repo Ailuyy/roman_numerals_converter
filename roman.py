@@ -1,6 +1,6 @@
 # TODO: roman -> binary
 # TODO: Once a letter has been subtracted from, neither it nor the next lowest multiple of 5 may appear again in the string - so neither X nor V can follow IX, neither C nor L may follow XC, and neither M nor D may follow CM.
-# A letter cannot be used as a subtraction modifier if that letter, or the next highest multiple of 5, appears previously in the string - so IV or IX cannot follow I or V, XL or XC cannot follow X or L, and CD or CM cannot follow C or D.
+# TODO: A letter cannot be used as a subtraction modifier if that letter, or the next highest multiple of 5, appears previously in the string - so IV or IX cannot follow I or V, XL or XC cannot follow X or L, and CD or CM cannot follow C or D.
 
 class Roman:
 
