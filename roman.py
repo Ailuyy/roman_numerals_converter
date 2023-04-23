@@ -1,10 +1,5 @@
 # TODO: roman -> binary
-# TODO: Once a letter has been used as a subtraction modifier,
-# that letter cannot appear again in the string, unless that letter itself is subtracted from. For example, CDC is not valid (you would be subtracting 100 from 500, then adding it right back) – but CDXC (for 490) is valid. Similarly, XCX is not valid, but XCIX is.
-# To summarize:
-# C cannot follow CM or CD except in case of XC.
-# X cannot follow XC or XL except in the case of IX.
-# Once a letter has been subtracted from, neither it nor the next lowest multiple of 5 may appear again in the string - so neither X nor V can follow IX, neither C nor L may follow XC, and neither M nor D may follow CM.
+# TODO: Once a letter has been subtracted from, neither it nor the next lowest multiple of 5 may appear again in the string - so neither X nor V can follow IX, neither C nor L may follow XC, and neither M nor D may follow CM.
 # A letter cannot be used as a subtraction modifier if that letter, or the next highest multiple of 5, appears previously in the string - so IV or IX cannot follow I or V, XL or XC cannot follow X or L, and CD or CM cannot follow C or D.
 
 class Roman:
@@ -66,6 +61,7 @@ class Roman:
 
     def romanToInt(self, s: str):
         number = 0
+        s = s.replace(" ", "")
         if 1 <= len(s) <= 15: #3999 - max num
             for i in range(len(s)):
                 if s[i] in Roman.dic:
